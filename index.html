@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Heart Disease Deaths by states, 2014 </title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
+  <script src="https://code.highcharts.com/highcharts.js"></script>
+  <script src="https://code.highcharts.com/maps/modules/map.js"></script>
+  <script src="https://code.highcharts.com/maps/modules/exporting.js"></script>
+  <script src="https://code.highcharts.com/mapdata/countries/us/us-all.js"></script>
+
+
+  <script src="data.js"></script> <!-- data file of heart disease deaths -->
+</head>
+<body>
+  <h1>Number of Heart Disease Deaths per 100,000 Population by Gender, USA 2014</h1>
+  <div id="heartDiseaseDeaths-by-state"></div>
+<!--
+ Add select (drop-down menu) for male or female data
+ -->
+  <select id="genderSelect">
+    <option value="Male">Men</option>
+    <option value="Female">Women</option>
+  </select>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
